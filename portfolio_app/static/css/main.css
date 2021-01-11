@@ -209,6 +209,17 @@ img {
   padding: 20px;
 }
 
+.work .content .workBx p {
+  font-size: 22px;
+  font-style: italic;
+}
+.work .content .workBx h3 {
+  font-size: 26px;
+  line-height: 1em;
+  padding-top: 8px;
+  text-align: end;
+}
+
 .work .content .workBx img {
   max-width: 100%;
 }
