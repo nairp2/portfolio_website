@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base1.html" %}
 {% load static %}
 {% block page_content %}
 <h2>Projects</h2>
@@ -18,5 +18,11 @@
         </div>
     </div>
     {% endfor %}
+</div>
+<div class="button">
+  <a style="float: right; border-radius: 15px; height: 50px;" href="{% url 'base' %}"
+     class="btn btn-outline-success btn-lg btn-rounded waves-effect">
+      Back
+  </a>
 </div>
 {% endblock %}

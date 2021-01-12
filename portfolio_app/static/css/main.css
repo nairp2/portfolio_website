@@ -221,12 +221,51 @@ img {
 }
 
 .work .content .workBx img {
-  max-width: 100%;
+  max-width: 80%;
 }
 .testimonial {
-  background: #f7f7f7;
+  background: url("../img/background1.png");
+  background-size: cover;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.testimonial .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.testimonial .content .servicesBx {
+  border: double;
+  padding: 40px 20px;
+  background: #fff;
+  color: #111;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.testimonial .content .servicesBx:hover {
+  background: #E0FFFF;
+}
+
+.testimonial .content .servicesBx img {
+  max-width: 80px;
+}
+
+.testimonial .content .servicesBx h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.testimonial .container {
+  padding: 30px;
+}
+/*
 .testimonial .content {
   display: flex;
   justify-content: space-between;
@@ -260,7 +299,7 @@ img {
   font-size: 14px;
   font-weight: 400;
 }
-
+*/
 .contact {
   background: #111;
 }

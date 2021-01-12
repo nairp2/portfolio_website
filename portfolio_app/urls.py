@@ -3,6 +3,7 @@ from portfolio_app import views
 
 urlpatterns = [
     path('', views.base, name='base'),
+    path('home/', views.home, name='home'),
     path('about/', views.about, name='about'),
     path('resume/', views.resume, name='resume'),
     path('projects/', views.portfolio_index, name='portfolio_index'),
