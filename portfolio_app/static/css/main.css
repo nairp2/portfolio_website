@@ -229,13 +229,20 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-
+.testimonial .heading {
+  padding-top: 20px;
+}
+.testimonial .heading h2 {
+  font-size: 64px;
+  padding-bottom: 0;
+}
 .testimonial .content {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
   padding: 30px;
+  padding-top: 100px;
 }
 
 .testimonial .content .servicesBx {
@@ -392,6 +399,43 @@ img {
   text-align: center;
   padding: 10px;
 }
+.projindex {
+  background: url("../img/background1.png");
+  background-size: cover;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 150px;
+}
+.row {
+  align-items: center;
+  padding-top: 40px;
+}
+.projdetail {
+  background: url("../img/background.png");
+  background-size: cover;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  min-height: 100vh;
+}
+
+.projdetail h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.projdetail .row .col-md-4 h5 {
+  font-size: 36px;
+  padding-bottom: 40px;
+  padding-top: 6px;
+}
+.projdetail .row .col-md-4 p {
+  font-size: 22px;
+}
+
+
 
 /* Responsive */
 
@@ -492,6 +536,10 @@ img {
   }
   .testimonial .content .testimonialBx h3 {
     margin-top: 20px;
+  }
+  .projdetail h2 {
+    padding: 0;
+    padding-bottom: 20px;
   }
   .contactInfo {
     margin: 20px 0;

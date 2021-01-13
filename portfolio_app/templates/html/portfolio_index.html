@@ -1,28 +1,37 @@
-{% extends "base1.html" %}
 {% load static %}
-{% block page_content %}
-<h2>Projects</h2>
-<div class="row">
-{% for project in projects %}
-    <div class="col-md-4">
-        <div class="card mb-2">
-            <img class="card-img-top" src="{% static project.image %}">
-            <div class="card-body">
-                <h5 class="card-title">{{ project.title }}</h5>
-                <p class="card-text">{{ project.description }}</p>
-                <a style="border-radius: 15px;" href="{% url 'portfolio_detail' project.pk %}"
-                   class="btn btn-outline-primary btn-rounded waves-effect">
-                    Read More
-                </a>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+  </head>
+  <body>
+    <section class="projindex">
+        <div class="row">
+        {% for project in projects %}
+            <div class="col-md-4">
+                <div class="card mb-2">
+                    <img class="card-img-top" src="{% static project.image %}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.description }}</p>
+                        <a style="border-radius: 15px;" href="{% url 'portfolio_detail' project.pk %}"
+                           class="btn btn-outline-primary btn-rounded waves-effect">
+                            Read More
+                        </a>
+                    </div>
+                </div>
             </div>
+            {% endfor %}
         </div>
-    </div>
-    {% endfor %}
-</div>
-<div class="button">
-  <a style="float: right; border-radius: 15px; height: 50px;" href="{% url 'base' %}"
-     class="btn btn-outline-success btn-lg btn-rounded waves-effect">
-      Back
-  </a>
-</div>
-{% endblock %}
+        <div class="button">
+          <a style="float: right; border-radius: 15px; height: 50px;" href="{% url 'base' %}"
+             class="btn btn-outline-success btn-lg btn-rounded waves-effect">
+              Back
+          </a>
+        </div>
+      </section>
+  </body>
+</html>
