@@ -392,6 +392,9 @@ img {
   color: #2196f3;
   margin-bottom: 0;
 }
+.contactInfoBx .box .text p {
+  text-decoration: none;
+}
 
 .copyright {
   background: #000;
