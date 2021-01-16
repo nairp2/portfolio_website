@@ -26,7 +26,7 @@ SECRET_KEY = 'v3$$3c&ggv@6%661tv-7qlv)b@2i)^soe4y$%i*j@&cca^$=1y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hidden-badlands-67496.herokuapp.com', '0.0.0.0', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['young-fortress-16362.herokuapp.com', '0.0.0.0', 'localhost', '127.0.0.1']
 
 
 # Application definition
