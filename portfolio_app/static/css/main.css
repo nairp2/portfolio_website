@@ -56,7 +56,7 @@ section {
 }
 
 .photo img {
-  max-width: 50%;
+  max-width: 70%;
   float: center;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
